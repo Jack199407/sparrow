@@ -1,0 +1,9 @@
+.DS_Store
+app.jar
+/cache/
+/**/target/
+/.idea/
+/logs/
+/log/
+/app/log/
+/*/*.iml
