@@ -23,9 +23,10 @@
     <modules>
         <module>sparrow-bundle</module>
         <module>sparrow-web</module>
+        <module>sparrow-webcommon</module>
     </modules>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.alibaba.fastjson2/fastjson2 -->
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

@@ -4,6 +4,7 @@ package com.algonquin.web.controller;
 import com.algonquin.web.dto.RequestInfoRequest;
 import com.algonquin.web.dto.RequestInfoResponse;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
 
 @RestController
+@Log4j2
 public class WebController {
     @PostMapping("/post/method")
     public String postMethod() {
