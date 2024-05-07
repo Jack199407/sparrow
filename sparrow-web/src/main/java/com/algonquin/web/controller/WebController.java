@@ -1,8 +1,10 @@
 package com.algonquin.web.controller;
 
 
+import com.algonquin.domain.service.BundleService;
 import com.algonquin.web.dto.RequestInfoRequest;
 import com.algonquin.web.dto.RequestInfoResponse;
+import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,10 @@ import java.util.*;
 @RestController
 @Log4j2
 public class WebController {
+
+    @Resource
+    private BundleService bundleService;
+
     @PostMapping("/post/method")
     public String postMethod() {
         return "this is post method";
@@ -22,6 +28,11 @@ public class WebController {
     @GetMapping("/get/method")
     public String getMethod() {
         return "this is get method";
+    }
+
+    @PostMapping("/getUserName")
+    public String getLocale() {
+        return bundleService.getName();
     }
 
     @PostMapping("/post/request/info")

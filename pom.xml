@@ -24,6 +24,8 @@
         <module>sparrow-bundle</module>
         <module>sparrow-web</module>
         <module>sparrow-webcommon</module>
+        <module>sparrow-infrastructure</module>
+        <module>sparrow-domain</module>
     </modules>
     <dependencies>
 
